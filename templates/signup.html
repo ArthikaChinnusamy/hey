@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <h1>signup</h1>
+    <form action="success" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="name" name="name"><br>
+        <!-- <input type="datetime" placeholder="date 0of birth"><br> -->
+        <input type="number" placeholder="phone" name="phone"><br>
+        <input type="email" placeholder="email" name="mail"><br>
+        <input type="text" placeholder="username" name="uname"><br>
+        <input type="text" placeholder="password" name="password"><br>
+        <input type="text" placeholder="confirm password" name="confirm"><br>
+        <input type="submit" value="signup">
+        <a href="">cancel</a>
+    </form>
+    {{result}}
+</body>
+</html>

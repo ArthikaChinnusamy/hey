@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+</head>
+<body>
+    <h1>Forgot password</h1>
+    <form action="updateforgot" method="POST">
+        {% csrf_token %}
+        <input type="number" placeholder="number" name="phone"><br>
+        <input type="text" name="password" placeholder="new password"><br>
+        <input type="text" name="confirm" placeholder="confirm password"><br>
+        <input type="submit" value="Update">
+        <a href="">cancel</a>
+    </form>
+    {{error}}
+</body>
+</html>
